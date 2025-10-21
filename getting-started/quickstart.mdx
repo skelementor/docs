@@ -1,0 +1,197 @@
+---
+title: "Quickstart"
+description: "Get Skelementor up and running in 3 simple steps"
+---
+
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/quickstart-light.png"
+  className="dark:hidden"
+  alt="Skelementor Quickstart - Get up and running in 3 simple steps"
+/>
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/quickstart-dark.png"
+  className="hidden dark:block"
+  alt="Skelementor Quickstart - Get up and running in 3 simple steps"
+/>
+
+## Get Started in 3 Steps
+
+Get your CSS utilities imported into Elementor and start building faster than ever.
+
+### Step 1: Install the Plugin
+
+<AccordionGroup>
+  <Accordion icon="download" title="Download & Install">
+    <Steps>
+      <Step title="Download the Plugin">
+        Download the latest version from the [GitHub releases
+        page](https://github.com/rajinkhan/skelementor/releases) or install via
+        WordPress admin.
+      </Step>
+      <Step title="Upload to WordPress">
+        Go to **Plugins → Add New → Upload Plugin** in your WordPress admin and
+        select the downloaded ZIP file.
+      </Step>
+      <Step title="Activate">
+        Click **Activate** after installation completes.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion icon="check-circle" title="Verify Requirements">
+    Make sure you have: - **WordPress:** 5.8 or higher - **PHP:** 7.4 or higher
+    - **Elementor:** v4.0.0+ with Atomic Elements enabled
+    <Tip>
+      You can check your Elementor version in **Elementor → System Info**.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+### Step 2: Import Your First CSS
+
+<AccordionGroup>
+  <Accordion icon="code" title="Use the Included Framework">
+    The plugin includes a complete utility framework with 300+ classes:
+    <Steps>
+      <Step title="Open Skelementor Admin">
+        Go to **WordPress Admin → Skelementor** in your admin menu.
+      </Step>
+      <Step title="Copy the CSS">
+        Open `skelementor-utilities.css` from the plugin folder and copy all the
+        CSS content.
+      </Step>
+      <Step title="Paste & Import">
+        Paste the CSS into the "CSS Content" textarea and click **"Import Into
+        Elementor"**.
+      </Step>
+      <Step title="Wait for Success">
+        The plugin will parse and import all classes. You'll see a success
+        message when complete.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion icon="pen-to-square" title="Import Custom CSS">
+    Want to import your own CSS utilities?
+    <Steps>
+      <Step title="Prepare Your CSS">
+        Write your utility classes following our [CSS writing
+        guidelines](/css-reference/writing-css).
+      </Step>
+      <Step title="Import in Batches">
+        For large CSS files, import 20-30 classes at a time to avoid timeouts.
+      </Step>
+      <Step title="Test Classes">
+        Verify your classes work in Elementor before importing more.
+      </Step>
+    </Steps>
+  </Accordion>
+</AccordionGroup>
+
+### Step 3: Use Classes in Elementor
+
+<Accordion icon="magic-wand" title="Apply Utility Classes">
+  Now you can use utility classes on any Elementor atomic element:
+  <Steps>
+    <Step title="Open Elementor Editor">
+      Edit any page or post with Elementor.
+    </Step>
+    <Step title="Add an Atomic Element">
+      Add a **Heading**, **Text**, **Div Block**, or any other atomic element.
+    </Step>
+    <Step title="Apply Classes">
+      In the element's **Advanced** tab, add utility classes to the **CSS
+      Classes** field.
+    </Step>
+    <Step title="See Instant Results">
+      Your utility classes will apply immediately in the editor.
+    </Step>
+  </Steps>
+</Accordion>
+
+## Quick Examples
+
+Try these utility combinations to see Skelementor in action:
+
+### Flexbox Layout
+
+```html
+<div class="flex items-center justify-between p-6 bg-white rounded-lg">
+  <h1 class="text-2xl font-700">Logo</h1>
+  <nav class="flex gap-6">
+    <a class="text-base text-gray">Home</a>
+    <a class="text-base text-gray">About</a>
+  </nav>
+</div>
+```
+
+### Button Component
+
+```html
+<button class="btn btn-blue">Primary Button</button>
+<button class="btn btn-green btn-lg">Large Button</button>
+```
+
+### Card Grid
+
+```html
+<div class="cont">
+  <div class="flex gap-6 flex-wrap">
+    <div class="card w-1-3">Card 1</div>
+    <div class="card w-1-3">Card 2</div>
+    <div class="card w-1-3">Card 3</div>
+  </div>
+</div>
+```
+
+## What Happens Next?
+
+<CardGroup cols={2}>
+  <Card
+    title="Explore Utilities"
+    icon="search"
+    href="/utility-framework/overview"
+  >
+    Browse the complete utility framework with 300+ classes.
+  </Card>
+  <Card title="Learn Best Practices" icon="star" href="/usage/best-practices">
+    Discover how to use utilities effectively in your designs.
+  </Card>
+  <Card title="View Examples" icon="code" href="/usage/examples">
+    See real-world examples and advanced usage patterns.
+  </Card>
+  <Card title="Customize CSS" icon="pen-to-square" href="/usage/custom-css">
+    Learn how to write and import your own utility classes.
+  </Card>
+</CardGroup>
+
+## Common Issues
+
+<Warning>
+  **Important:** Never re-import the same classes. If you need to update a
+  class, delete it from Elementor's Global Classes panel first, then re-import.
+</Warning>
+
+### Classes Not Working?
+
+- Check that you're using Elementor v4 with Atomic Elements enabled
+- Verify classes are imported successfully in the Skelementor admin
+- Clear Elementor cache: **Elementor → Tools → Regenerate CSS**
+
+### Import Errors?
+
+- Import in smaller batches (20-30 classes at a time)
+- Check CSS syntax for missing semicolons or units
+- Ensure you're not re-importing existing classes
+
+### Need Help?
+
+- Check our [troubleshooting guide](/troubleshooting/common-errors)
+- Browse the [FAQ](/troubleshooting/faq)
+- [Contact support](/troubleshooting/support)
+
+<Note>
+  **Success!** You're now ready to build faster with utility classes in
+  Elementor. Explore the [utility framework](/utility-framework/overview) to see
+  all available classes.
+</Note>

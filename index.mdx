@@ -1,97 +1,189 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Skelementor"
+description: "CSS Utility Importer for Elementor v4 - Import utility classes directly into Elementor's Global Classes system"
 ---
 
-## Setting up
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/skele-light.png"
+  className="dark:hidden"
+  alt="Skelementor - CSS Utility Importer for Elementor"
+/>
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/skele-dark.png"
+  className="hidden dark:block"
+  alt="Skelementor - CSS Utility Importer for Elementor"
+/>
 
-Get your documentation site up and running in minutes.
+## What is Skelementor?
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
+Skelementor is a WordPress plugin that seamlessly imports CSS utility classes into Elementor v4's Global Classes system. No more manual CSS management or complex setup - just paste your CSS and start using utility classes on any Elementor atomic element.
+
+<Card title="Quick Start" icon="rocket" href="/quickstart" horizontal>
+  Get up and running in 3 simple steps.
 </Card>
 
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
+## Key Features
 
 <Columns cols={2}>
   <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
+    title="Automatic Limit Management"
+    icon="gear"
+    href="/advanced/limit-management"
   >
-    Edit your docs locally and preview them in real time.
+    No need to manually edit Elementor files. The plugin handles all limit
+    management automatically.
   </Card>
   <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
+    title="Safe Deactivation"
+    icon="shield-check"
+    href="/advanced/customization"
   >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+    Restores all Elementor settings when deactivated. Your imported classes
+    remain intact.
   </Card>
   <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
+    title="Batch Import Support"
+    icon="upload"
+    href="/advanced/batch-imports"
   >
-    Auto-generate API documentation from OpenAPI specifications.
+    Import large CSS files incrementally. Perfect for comprehensive utility
+    frameworks.
+  </Card>
+  <Card title="No Configuration Needed" icon="plug" href="/installation">
+    Works out of the box. Just install, activate, and start importing.
   </Card>
 </Columns>
 
-## Create beautiful pages
+## Complete Utility Framework
 
-Everything you need to create world-class documentation.
+Skelementor includes a comprehensive utility framework with 300+ ready-to-use classes:
+
+<CardGroup cols={3}>
+  <Card
+    title="Typography"
+    icon="text-size"
+    href="/utility-framework/typography"
+  >
+    Font sizes, weights, line heights, text alignment, and more.
+  </Card>
+  <Card title="Layout" icon="grid" href="/utility-framework/layout">
+    Display, positioning, flexbox, and responsive utilities.
+  </Card>
+  <Card
+    title="Spacing"
+    icon="arrows-horizontal"
+    href="/utility-framework/spacing"
+  >
+    Margin, padding, and gap utilities with consistent scale.
+  </Card>
+  <Card title="Colors" icon="palette" href="/utility-framework/colors">
+    Text, background, and border color utilities.
+  </Card>
+  <Card title="Borders" icon="square" href="/utility-framework/borders">
+    Border width, style, radius, and color utilities.
+  </Card>
+  <Card
+    title="Components"
+    icon="puzzle-piece"
+    href="/utility-framework/components"
+  >
+    Pre-built button, card, and container components.
+  </Card>
+</CardGroup>
+
+## Requirements
+
+<Note>
+  **Elementor v4 Required:** This plugin works with Elementor v4 (beta, 3.32.4+)
+  or higher with Atomic Elements enabled.
+</Note>
+
+- **WordPress:** 5.8 or higher
+- **PHP:** 7.4 or higher
+- **Elementor:** v4.0.0+ with Atomic Elements feature
+- **Compatibility:** Works with both Elementor Free and Pro
+
+## How It Works
+
+<Steps>
+  <Step title="Install & Activate">
+    Install the plugin and activate it in your WordPress admin.
+  </Step>
+  <Step title="Import CSS">
+    Paste your CSS utilities into the Skelementor admin page and click "Import
+    Into Elementor".
+  </Step>
+  <Step title="Use Classes">
+    Apply utility classes to any Elementor atomic element in the editor.
+  </Step>
+</Steps>
+
+## Example Usage
+
+Once imported, use utility classes directly in Elementor:
+
+```html
+<!-- Flexbox Layout -->
+<div class="flex items-center gap-4">
+  <h1 class="text-2xl font-700">Heading</h1>
+  <p class="text-gray">Subtitle</p>
+</div>
+
+<!-- Button Component -->
+<button class="btn btn-blue">Click Me</button>
+
+<!-- Card Layout -->
+<div class="card p-6 rounded-lg bg-white">
+  <h2 class="text-xl font-600 mb-4">Card Title</h2>
+  <p class="text-gray">Card content goes here.</p>
+</div>
+```
+
+## What Makes Skelementor Different?
 
 <Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
+  <Card title="Native Elementor Integration" icon="wordpress">
+    Uses Elementor's built-in Global Classes system - no custom CSS injection or
+    performance overhead.
   </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
+  <Card title="Smart CSS Parsing" icon="brain">
+    Automatically converts CSS to Elementor's atomic format with intelligent
+    property mapping.
   </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
+  <Card title="Automatic Conversions" icon="arrows-rotate">
+    Converts logical properties, handles auto values, and adds position:relative
+    for z-index classes.
   </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
+  <Card title="Backup System" icon="floppy-disk">
+    Creates automatic backups before making changes and restores settings on
+    deactivation.
   </Card>
 </Columns>
 
-## Need inspiration?
+## Get Started
+
+Ready to supercharge your Elementor workflow?
+
+<Card title="Start with Quickstart" icon="play" href="/quickstart">
+  Follow our step-by-step guide to get up and running in minutes.
+</Card>
 
 <Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
+  title="Browse Utility Framework"
+  icon="book-open"
+  href="/utility-framework/overview"
 >
-  Browse our showcase of exceptional documentation sites.
+  Explore the complete utility framework with 300+ classes.
 </Card>
+
+<Card title="View Examples" icon="code" href="/usage/examples">
+  See real-world examples and best practices for using utility classes.
+</Card>
+
+<Note>
+  **Need Help?** Check out our [troubleshooting
+  guide](/troubleshooting/common-errors) or [contact
+  support](/troubleshooting/support).
+</Note>

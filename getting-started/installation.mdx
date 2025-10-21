@@ -1,0 +1,268 @@
+---
+title: "Installation"
+description: "Complete installation guide for Skelementor plugin"
+---
+
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/installation-light.png"
+  className="dark:hidden"
+  alt="Skelementor Installation - Complete installation guide"
+/>
+<img
+  style={{ borderRadius: "0.5rem", width: "100%", height: "auto" }}
+  src="/images/installation-dark.png"
+  className="hidden dark:block"
+  alt="Skelementor Installation - Complete installation guide"
+/>
+
+## Installation Methods
+
+Choose the installation method that works best for your setup.
+
+### Method 1: WordPress Admin Upload (Recommended)
+
+<Steps>
+  <Step title="Download the Plugin">
+    Download the latest version from the [GitHub releases
+    page](https://github.com/rajinkhan/skelementor/releases).
+  </Step>
+  <Step title="Access WordPress Admin">
+    Log into your WordPress admin dashboard.
+  </Step>
+  <Step title="Navigate to Plugins">
+    Go to **Plugins → Add New** in your admin menu.
+  </Step>
+  <Step title="Upload Plugin">
+    Click **"Upload Plugin"** button at the top of the page.
+  </Step>
+  <Step title="Select File">
+    Choose the downloaded ZIP file and click **"Install Now"**.
+  </Step>
+  <Step title="Activate Plugin">
+    Click **"Activate Plugin"** after installation completes.
+  </Step>
+</Steps>
+
+### Method 2: FTP Upload
+
+<Steps>
+  <Step title="Download & Extract">
+    Download the plugin ZIP and extract it to your local computer.
+  </Step>
+  <Step title="Connect via FTP">
+    Connect to your website using an FTP client (FileZilla, WinSCP, etc.).
+  </Step>
+  <Step title="Upload Folder">
+    Upload the extracted `skelementor-v4` folder to `/wp-content/plugins/` on
+    your server.
+  </Step>
+  <Step title="Set Permissions">
+    Ensure the plugin folder has proper permissions (755 for folders, 644 for
+    files).
+  </Step>
+  <Step title="Activate in Admin">
+    Go to **Plugins** in WordPress admin and activate **"Skelementor"**.
+  </Step>
+</Steps>
+
+### Method 3: WP-CLI
+
+If you have WP-CLI installed on your server:
+
+```bash
+# Download and install
+wp plugin install https://github.com/rajinkhan/skelementor/archive/main.zip --activate
+
+# Or if you have the ZIP file locally
+wp plugin install /path/to/skelementor-v4.zip --activate
+```
+
+## System Requirements
+
+### Minimum Requirements
+
+<CardGroup cols={2}>
+  <Card title="WordPress" icon="wordpress">
+    **Version:** 5.8 or higher **Multisite:** Supported
+  </Card>
+  <Card title="PHP" icon="code">
+    **Version:** 7.4 or higher **Memory:** 128MB recommended
+  </Card>
+  <Card title="Elementor" icon="puzzle-piece">
+    **Version:** v4.0.0+ (beta 3.32.4+) **Feature:** Atomic Elements required
+  </Card>
+  <Card title="MySQL" icon="database">
+    **Version:** 5.6 or higher **MariaDB:** 10.1 or higher
+  </Card>
+</CardGroup>
+
+### Recommended Requirements
+
+- **WordPress:** 6.0 or higher
+- **PHP:** 8.0 or higher
+- **Memory:** 256MB or higher
+- **Elementor:** Latest stable version
+
+## Pre-Installation Checklist
+
+Before installing Skelementor, verify these requirements:
+
+<AccordionGroup>
+  <Accordion icon="check-circle" title="WordPress Version">
+    Check your WordPress version in **Dashboard → Updates** or **Tools → Site
+    Health**.
+    <Warning>
+      WordPress 5.8+ is required. Older versions may experience compatibility
+      issues.
+    </Warning>
+  </Accordion>
+  <Accordion icon="puzzle-piece" title="Elementor v4 Setup">
+    Ensure you have Elementor v4 with Atomic Elements enabled:
+    <Steps>
+      <Step title="Check Elementor Version">
+        Go to **Elementor → System Info** and verify version is 4.0.0+.
+      </Step>
+      <Step title="Enable Atomic Elements">
+        In Elementor settings, ensure Atomic Elements feature is enabled.
+      </Step>
+      <Step title="Test Global Classes">
+        Try creating a Global Class in Elementor to verify the feature works.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion icon="server" title="Server Requirements">
+    Verify your server meets the minimum requirements: - PHP 7.4+ with
+    sufficient memory - MySQL 5.6+ or MariaDB 10.1+ - Sufficient disk space for
+    plugin files - Write permissions for plugin directory
+  </Accordion>
+</AccordionGroup>
+
+## Post-Installation Setup
+
+After successful installation, complete these setup steps:
+
+### 1. Verify Installation
+
+<Steps>
+  <Step title="Check Plugin Status">
+    Go to **Plugins** in WordPress admin and verify "Skelementor" is active.
+  </Step>
+  <Step title="Access Admin Page">
+    Look for **"Skelementor"** in your admin menu and click to access the admin
+    page.
+  </Step>
+  <Step title="Test Interface">
+    Verify the admin interface loads correctly with CSS textarea and import
+    button.
+  </Step>
+</Steps>
+
+### 2. Import Utility Framework
+
+<Steps>
+  <Step title="Open Skelementor Admin">
+    Navigate to **WordPress Admin → Skelementor**.
+  </Step>
+  <Step title="Copy CSS Content">
+    Open `skelementor-utilities.css` from the plugin folder and copy all
+    content.
+  </Step>
+  <Step title="Paste & Import">
+    Paste the CSS into the textarea and click **"Import Into Elementor"**.
+  </Step>
+  <Step title="Verify Success">
+    Wait for the success message and check that classes appear in Elementor's
+    Global Classes.
+  </Step>
+</Steps>
+
+### 3. Test in Elementor
+
+<Steps>
+  <Step title="Open Elementor Editor">
+    Edit any page or post with Elementor.
+  </Step>
+  <Step title="Add Atomic Element">
+    Add a **Heading** or **Text** element to your page.
+  </Step>
+  <Step title="Apply Utility Class">
+    In the element's **Advanced** tab, add a class like `text-2xl font-700` to
+    the CSS Classes field.
+  </Step>
+  <Step title="Verify Styling">
+    Check that the styling applies correctly in the editor preview.
+  </Step>
+</Steps>
+
+## Troubleshooting Installation
+
+### Common Installation Issues
+
+<AccordionGroup>
+  <Accordion icon="exclamation-triangle" title="Plugin Activation Failed">
+    **Possible Causes:** - Insufficient PHP memory - Plugin conflicts -
+    Corrupted download **Solutions:** - Increase PHP memory limit to 256MB -
+    Deactivate other plugins temporarily - Re-download and reinstall the plugin
+  </Accordion>
+  <Accordion icon="puzzle-piece" title="Elementor Not Compatible">
+    **Error:** "Elementor v4 required" **Solutions:** - Update Elementor to
+    version 4.0.0 or higher - Enable Atomic Elements in Elementor settings -
+    Check Elementor system requirements
+  </Accordion>
+  <Accordion icon="server" title="Server Errors">
+    **Common Issues:** - 500 Internal Server Error - Memory limit exceeded -
+    Permission denied errors **Solutions:** - Check server error logs - Increase
+    PHP memory limit - Verify file permissions (755 for folders, 644 for files)
+  </Accordion>
+</AccordionGroup>
+
+### Getting Help
+
+If you encounter issues during installation:
+
+<CardGroup cols={2}>
+  <Card
+    title="Check System Health"
+    icon="heart-pulse"
+    href="/troubleshooting/common-errors"
+  >
+    Run WordPress Site Health check to identify issues.
+  </Card>
+  <Card
+    title="Contact Support"
+    icon="life-ring"
+    href="/troubleshooting/support"
+  >
+    Get help from our support team.
+  </Card>
+  <Card title="View FAQ" icon="question-circle" href="/troubleshooting/faq">
+    Browse frequently asked questions.
+  </Card>
+  <Card
+    title="GitHub Issues"
+    icon="github"
+    href="https://github.com/rajinkhan/skelementor/issues"
+  >
+    Report bugs or request features on GitHub.
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<Note>
+  **Installation Complete!** Now that Skelementor is installed and activated,
+  you're ready to start using utility classes in Elementor.
+</Note>
+
+<Card title="Start with Quickstart" icon="rocket" href="/quickstart">
+  Follow our quickstart guide to import your first CSS utilities.
+</Card>
+
+<Card
+  title="Explore Utility Framework"
+  icon="book-open"
+  href="/utility-framework/overview"
+>
+  Browse the complete utility framework with 300+ classes.
+</Card>

@@ -1,68 +1,75 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Skelementor",
+  "description": "CSS Utility Importer for Elementor v4 - Import utility classes directly into Elementor's Global Classes system",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3b82f6",
+    "light": "#60a5fa",
+    "dark": "#2563eb"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/favicon.png",
+  "css": "/custom.css",
+  "logo": {
+    "light": "/logo/wordmark-light.png",
+    "dark": "/logo/wordmark-dark.png"
+  },
+  "hero": {
+    "light": "/images/skele-light.png",
+    "dark": "/images/skele-dark.png"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/quickstart",
+              "getting-started/installation"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Utility Framework",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "utility-framework/overview",
+              "utility-framework/typography",
+              "utility-framework/layout",
+              "utility-framework/spacing",
+              "utility-framework/sizing",
+              "utility-framework/colors",
+              "utility-framework/borders",
+              "utility-framework/effects",
+              "utility-framework/positioning",
+              "utility-framework/flexbox",
+              "utility-framework/components"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Usage",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "usage/basic-usage",
+              "usage/examples",
+              "usage/best-practices",
+              "usage/custom-css"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "CSS Reference",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "css-reference/supported-properties",
+              "css-reference/writing-css",
+              "css-reference/reserved-names"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Troubleshooting",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "troubleshooting/common-errors",
+              "troubleshooting/faq",
+              "troubleshooting/support"
             ]
           }
         ]
@@ -71,52 +78,35 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "GitHub",
+          "href": "https://github.com/rajinkhan/skelementor",
+          "icon": "github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "WordPress.org",
+          "href": "https://wordpress.org/plugins/skelementor",
+          "icon": "wordpress"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@skelementor.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Download Plugin",
+      "href": "https://github.com/rajinkhan/skelementor/releases"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/rajinkhan/skelementor",
+      "website": "https://wordpress.org/plugins/skelementor"
     }
   }
 }
