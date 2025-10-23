@@ -7,7 +7,7 @@ description: "Complete flexbox utilities for modern layouts"
 
 Control the direction of flex items.
 
-<Card title="Flex Direction" icon="arrows-expand">
+<Card title="Flex Direction" icon="arrows-left-right">
 
 |             |        |                           |                   |
 | ----------- | ------ | ------------------------- | ----------------- |
@@ -20,34 +20,37 @@ Control the direction of flex items.
 
 Control how flex items wrap.
 
-<Card title="Flex Wrap" icon="arrows-expand">
-  | | | | | |------|------|-----|-------| | `.flex-wrap` | Wrap | `flex-wrap:
-  wrap;` | Allow wrapping | | `.flex-nowrap` | No wrap | `flex-wrap: nowrap;` |
-  Prevent wrapping |
+<Card title="Flex Wrap" icon="arrows-left-right-to-line">
+  | | | | | 
+  |------|------|-----|-------| 
+  | `.flex-wrap` | Wrap | `flex-wrap: wrap;` | Allow wrapping | 
+  | `.flex-nowrap` | No wrap | `flex-wrap: nowrap;` | Prevent wrapping |
 </Card>
 
 ## Justify Content
 
 Control horizontal alignment of flex items.
 
-<Card title="Justify Content" icon="arrows-horizontal">
-  | | | | | |------|---------|-----|-------| | `.justify-start` | Start |
-  `justify-content: start;` | Align to start | | `.justify-center` | Center |
-  `justify-content: center;` | Center alignment | | `.justify-end` | End |
-  `justify-content: end;` | Align to end | | `.justify-between` | Space between
-  | `justify-content: space-between;` | Space between items |
+<Card title="Justify Content" icon="arrow-down-left-and-arrow-up-right-to-center">
+  | | | | | 
+  |------|---------|-----|-------| 
+  | `.justify-start` | Start | `justify-content: start;` | Align to start | 
+  | `.justify-center` | Center | `justify-content: center;` | Center alignment | 
+  | `.justify-end` | End | `justify-content: end;` | Align to end | 
+  | `.justify-between` | Space between | `justify-content: space-between;` | Space between items |
 </Card>
 
 ## Align Items
 
 Control vertical alignment of flex items.
 
-<Card title="Align Items" icon="arrows-vertical">
-  | | | | | |------|-------|-----|-------| | `.items-start` | Start |
-  `align-items: start;` | Align to start | | `.items-center` | Center |
-  `align-items: center;` | Center alignment | | `.items-end` | End |
-  `align-items: end;` | Align to end | | `.items-stretch` | Stretch |
-  `align-items: stretch;` | Stretch to fill |
+<Card title="Align Items" icon="objects-align-left">
+  | | | | | 
+  |------|-------|-----|-------| 
+  | `.items-start` | Start | `align-items: start;` | Align to start | 
+  | `.items-center` | Center | `align-items: center;` | Center alignment | 
+  | `.items-end` | End | `align-items: end;` | Align to end | 
+  | `.items-stretch` | Stretch | `align-items: stretch;` | Stretch to fill |
 </Card>
 
 ## Align Self
@@ -55,22 +58,26 @@ Control vertical alignment of flex items.
 Control individual item alignment.
 
 <Card title="Align Self" icon="user">
-  | | | | | |------|-------|-----|-------| | `.self-center` | Center |
-  `align-self: center;` | Center this item | | `.self-start` | Start |
-  `align-self: start;` | Align to start | | `.self-end` | End | `align-self:
-  end;` | Align to end |
+  | | | | | 
+  |------|-------|-----|-------| 
+  | `.self-center` | Center | `align-self: center;` | Center this item | 
+  | `.self-start` | Start | `align-self: start;` | Align to start | 
+  | `.self-end` | End | `align-self: end;` | Align to end |
 </Card>
 
 ## Gap
 
 Control spacing between flex items.
 
-<Card title="Gap Properties" icon="arrows-expand">
-  | | | | | |------|-----|-----|-------| | `.gap-1` | 4px | `gap: 4px;` | Small
-  gap | | `.gap-2` | 8px | `gap: 8px;` | Small gap | | `.gap-3` | 12px | `gap:
-  12px;` | Medium gap | | `.gap-4` | 16px | `gap: 16px;` | Standard gap | |
-  `.gap-6` | 24px | `gap: 24px;` | Large gap | | `.gap-8` | 32px | `gap: 32px;`
-  | Extra large gap |
+<Card title="Gap Properties" icon="arrows-left-right-to-line">
+  | | | | | 
+  |------|-----|-----|-------| 
+  | `.gap-1` | 4px | `gap: 4px;` | Small gap | 
+  | `.gap-2` | 8px | `gap: 8px;` | Small gap | 
+  | `.gap-3` | 12px | `gap: 12px;` | Medium gap | 
+  | `.gap-4` | 16px | `gap: 16px;` | Standard gap |  
+  | `.gap-6` | 24px | `gap: 24px;` | Large gap | 
+  | `.gap-8` | 32px | `gap: 32px;` | Extra large gap |
 </Card>
 
 ## Common Flexbox Patterns
@@ -120,7 +127,7 @@ Control spacing between flex items.
   <Card title="Layout" icon="grid" href="/utility-framework/layout">
     Display utilities for flexbox
   </Card>
-  <Card title="Spacing" icon="arrows-expand" href="/utility-framework/spacing">
+  <Card title="Spacing" icon="arrows-to-line" href="/utility-framework/spacing">
     Margin and padding utilities
   </Card>
 </CardGroup>
