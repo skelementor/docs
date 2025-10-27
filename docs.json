@@ -93,8 +93,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@skelementor.com"
+        "label": "Editor",
+        "href": "https://skele-kit.vercel.app/"
       }
     ],
     "primary": {
