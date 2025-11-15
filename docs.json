@@ -34,17 +34,101 @@
           {
             "group": "Utility Framework",
             "pages": [
-              "utility-framework/overview",
-              "utility-framework/typography",
-              "utility-framework/layout",
-              "utility-framework/spacing",
-              "utility-framework/sizing",
-              "utility-framework/colors",
-              "utility-framework/borders",
-              "utility-framework/effects",
-              "utility-framework/positioning",
-              "utility-framework/flexbox",
-              "utility-framework/components"
+              "utility-framework/overview"
+            ]
+          },
+          {
+            "group": "Overview",
+            "pages": [
+              "overview/typography",
+              "overview/layout",
+              "overview/spacing",
+              "overview/sizing",
+              "overview/colors",
+              "overview/effects",
+              "overview/flexbox",
+              "overview/components",
+              "overview/borders"
+            ]
+          },
+          {
+            "group": "Typography",
+            "pages": [
+              "typography/font-size",
+              "typography/font-weight",
+              "typography/line-height",
+              "typography/text-alignment",
+              "typography/letter-spacing",
+              "typography/text-style"
+            ]
+          },
+          {
+            "group": "Layout",
+            "pages": [
+              "layout/display",
+              "layout/overflow",
+              "layout/object-fit",
+              "layout/aspect-ratio"
+            ]
+          },
+          {
+            "group": "Spacing",
+            "pages": [
+              "spacing/margin",
+              "spacing/padding",
+              "spacing/gap"
+            ]
+          },
+          {
+            "group": "Sizing",
+            "pages": [
+              "sizing/width",
+              "sizing/height",
+              "sizing/max-width"
+            ]
+          },
+          {
+            "group": "Positioning",
+            "pages": [
+              "positioning/positioning"
+            ]
+          },
+          {
+            "group": "Colors",
+            "pages": [
+              "colors/text-colors",
+              "colors/background-colors",
+              "colors/border-colors"
+            ]
+          },
+          {
+            "group": "Effects",
+            "pages": [
+              "effects/effects"
+            ]
+          },
+          {
+            "group": "Flexbox",
+            "pages": [
+              "flexbox/direction",
+              "flexbox/alignment",
+              "flexbox/gap"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/button",
+              "components/card",
+              "components/container"
+            ]
+          },
+          {
+            "group": "Borders",
+            "pages": [
+              "borders/width",
+              "borders/style",
+              "borders/radius"
             ]
           },
           {
