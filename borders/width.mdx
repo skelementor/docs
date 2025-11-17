@@ -9,38 +9,46 @@ Control border thickness with static and fluid border width utilities. Border wi
 
 ## Static Border Width
 
-<Card title="Border Width" icon="square">
-
-|             |     |                      |               |
-| ----------- | --- | -------------------- | ------------- |
-| `.border-0` | 0   | `border-width: 0;`   | No border     |
-| `.border-1` | 1px | `border-width: 1px;` | Thin border   |
+| Class | Value | CSS | Usage |
+| ----- | ----- | --- | ----- |
+| `.border-0` | 0 | `border-width: 0;` | No border |
+| `.border-1` | 1px | `border-width: 1px;` | Thin border |
 | `.border-2` | 2px | `border-width: 2px;` | Medium border |
-| `.border-4` | 4px | `border-width: 4px;` | Thick border  |
+| `.border-4` | 4px | `border-width: 4px;` | Thick border |
 | `.border-8` | 8px | `border-width: 8px;` | Extra thick border |
 | `.border-10` | 10px | `border-width: 10px;` | Very thick border |
 | `.border-15` | 15px | `border-width: 15px;` | Ultra thick border |
 | `.border-20` | 20px | `border-width: 20px;` | Maximum border |
 
-</Card>
-
 ## Fluid Border Width
 
 Fluid border width utilities use `clamp()` to scale smoothly between mobile and desktop sizes, perfect for responsive borders.
 
-<Card title="Fluid Border Width" icon="waveform">
-
-| Class | Clamp Expression | Mobile → Desktop |
-| ----- | ---------------- | ---------------- |
-| `.border-fluid-1` | `clamp(0.0625rem, calc(0.053rem + 0.023vw), 0.078rem)` | 1px → 1.25px |
-| `.border-fluid-2` | `clamp(0.125rem, calc(0.107rem + 0.046vw), 0.156rem)` | 2px → 2.5px |
-| `.border-fluid-4` | `clamp(0.25rem, calc(0.21rem + 0.09vw), 0.31rem)` | 4px → 5px |
-| `.border-fluid-8` | `clamp(0.5rem, calc(0.43rem + 0.18vw), 0.63rem)` | 8px → 10px |
-| `.border-fluid-10` | `clamp(0.625rem, calc(0.53rem + 0.22vw), 0.78rem)` | 10px → 12.5px |
-| `.border-fluid-15` | `clamp(0.94rem, calc(0.8rem + 0.33vw), 1.17rem)` | 15px → 18.75px |
-| `.border-fluid-20` | `clamp(1.25rem, calc(1.07rem + 0.44vw), 1.56rem)` | 20px → 25px |
-
-</Card>
+<Tabs>
+  <Tab title="Static">
+    | Class | Value | CSS | Usage |
+    | ----- | ----- | --- | ----- |
+    | `.border-0` | 0 | `border-width: 0;` | No border |
+    | `.border-1` | 1px | `border-width: 1px;` | Thin border |
+    | `.border-2` | 2px | `border-width: 2px;` | Medium border |
+    | `.border-4` | 4px | `border-width: 4px;` | Thick border |
+    | `.border-8` | 8px | `border-width: 8px;` | Extra thick border |
+    | `.border-10` | 10px | `border-width: 10px;` | Very thick border |
+    | `.border-15` | 15px | `border-width: 15px;` | Ultra thick border |
+    | `.border-20` | 20px | `border-width: 20px;` | Maximum border |
+  </Tab>
+  <Tab title="Fluid">
+    | Class | Clamp Expression | Mobile → Desktop |
+    | ----- | ---------------- | ---------------- |
+    | `.border-fluid-1` | `clamp(0.0625rem, calc(0.053rem + 0.023vw), 0.078rem)` | 1px → 1.25px |
+    | `.border-fluid-2` | `clamp(0.125rem, calc(0.107rem + 0.046vw), 0.156rem)` | 2px → 2.5px |
+    | `.border-fluid-4` | `clamp(0.25rem, calc(0.21rem + 0.09vw), 0.31rem)` | 4px → 5px |
+    | `.border-fluid-8` | `clamp(0.5rem, calc(0.43rem + 0.18vw), 0.63rem)` | 8px → 10px |
+    | `.border-fluid-10` | `clamp(0.625rem, calc(0.53rem + 0.22vw), 0.78rem)` | 10px → 12.5px |
+    | `.border-fluid-15` | `clamp(0.94rem, calc(0.8rem + 0.33vw), 1.17rem)` | 15px → 18.75px |
+    | `.border-fluid-20` | `clamp(1.25rem, calc(1.07rem + 0.44vw), 1.56rem)` | 20px → 25px |
+  </Tab>
+</Tabs>
 
 ## Examples
 

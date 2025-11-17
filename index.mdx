@@ -24,6 +24,10 @@ Skelementor is Elementor's biggest component library, and now offers a WordPress
   Get up and running in 3 simple steps.
 </Card>
 
+<Info>
+  **New to Elementor v4?** This plugin requires Elementor v4 (beta 3.32.4+) with Atomic Elements enabled. <Badge color="blue" size="sm">v4 Required</Badge>
+</Info>
+
 ## Key Features
 
 <Columns cols={2}>
@@ -95,15 +99,16 @@ Skelementor includes a comprehensive utility framework with 200+ ready-to-use cl
 
 ## Requirements
 
-<Note>
-  **Elementor v4 Required:** This plugin works with Elementor v4 (beta, 3.32.4+)
-  or higher with Atomic Elements enabled.
-</Note>
+<Warning>
+  **Elementor v4 Required:** This plugin works with Elementor v4 (beta, 3.32.4+) or higher with Atomic Elements enabled.
+</Warning>
 
-- **WordPress:** 5.8 or higher
-- **PHP:** 7.4 or higher
-- **Elementor:** v4 (beta,3.32.4+) with Atomic Elements feature
-- **Compatibility:** Works with both Elementor Free and Pro
+| Requirement | Minimum | Recommended |
+|------------|---------|-------------|
+| **WordPress** | 5.8+ | 6.0+ |
+| **PHP** | 7.4+ | 8.0+ |
+| **Elementor** | v4 (beta 3.32.4+) | Latest stable |
+| **Compatibility** | Free & Pro | Both supported |
 
 ## How It Works
 
@@ -144,46 +149,40 @@ Once imported, use utility classes directly in Elementor:
 ## What Makes Skelementor Different?
 
 <Columns cols={2}>
-  <Card title="Native Elementor Integration" icon="wordpress">
-    Uses Elementor's built-in Global Classes system - no custom CSS injection or
-    performance overhead.
-  </Card>
-  <Card title="Smart CSS Parsing" icon="brain">
-    Automatically converts CSS to Elementor's atomic format with intelligent
-    property mapping.
-  </Card>
-  <Card title="Automatic Conversions" icon="arrows-rotate">
-    Converts logical properties, handles auto values, and adds position:relative
-    for z-index classes.
-  </Card>
-  <Card title="Backup System" icon="floppy-disk">
-    Creates automatic backups before making changes and restores settings on
-    deactivation.
-  </Card>
+  <div>
+    <h3>Native Elementor Integration</h3>
+    <p>Uses Elementor's built-in Global Classes system - no custom CSS injection or performance overhead.</p>
+  </div>
+  <div>
+    <h3>Smart CSS Parsing</h3>
+    <p>Automatically converts CSS to Elementor's atomic format with intelligent property mapping.</p>
+  </div>
+  <div>
+    <h3>Automatic Conversions</h3>
+    <p>Converts logical properties, handles auto values, and adds position:relative for z-index classes.</p>
+  </div>
+  <div>
+    <h3>Backup System</h3>
+    <p>Creates automatic backups before making changes and restores settings on deactivation.</p>
+  </div>
 </Columns>
 
 ## Get Started
 
 Ready to supercharge your Elementor workflow?
 
-<Card title="Start with Quickstart" icon="play" href="/quickstart">
-  Follow our step-by-step guide to get up and running in minutes.
-</Card>
+<CardGroup cols={3}>
+  <Card title="Start with Quickstart" icon="play" href="/quickstart">
+    Follow our step-by-step guide to get up and running in minutes.
+  </Card>
+  <Card title="Browse Utility Framework" icon="book-open" href="/overview">
+    Explore the complete utility framework with 200+ classes.
+  </Card>
+  <Card title="View Examples" icon="code" href="/usage/examples">
+    See real-world examples and best practices for using utility classes.
+  </Card>
+</CardGroup>
 
-<Card
-  title="Browse Utility Framework"
-  icon="book-open"
-  href="/overview"
->
-  Explore the complete utility framework with 200+ classes.
-</Card>
-
-<Card title="View Examples" icon="code" href="/usage/examples">
-  See real-world examples and best practices for using utility classes.
-</Card>
-
-<Note>
-  **Need Help?** Check out our [troubleshooting
-  guide](/troubleshooting/common-errors) or [contact
-  support](/troubleshooting/support).
-</Note>
+<Tip>
+  **Need Help?** Check out our [troubleshooting guide](/troubleshooting/common-errors) or [contact support](/troubleshooting/support).
+</Tip>

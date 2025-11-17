@@ -9,21 +9,17 @@ Control background color with semantic utilities. Background colors help create 
 
 ## Background Color Utilities
 
-<Card title="Background Colors" icon="square">
-
-|                  |            |         |                              |                    |
-| ---------------- | ---------- | ------- | ---------------------------- | ------------------ |
-| `.bg-white`      | White      | #ffffff | `background-color: #ffffff;` | Light backgrounds  |
-| `.bg-black`      | Black      | #000000 | `background-color: #000000;` | Dark backgrounds   |
-| `.bg-gray-dark`  | Dark Gray  | #374151 | `background-color: #374151;` | Dark sections      |
-| `.bg-gray`       | Gray       | #6b7280 | `background-color: #6b7280;` | Muted backgrounds  |
+| Class | Color | Hex | CSS | Usage |
+| ----- | ----- | --- | --- | ----- |
+| `.bg-white` | White | #ffffff | `background-color: #ffffff;` | Light backgrounds |
+| `.bg-black` | Black | #000000 | `background-color: #000000;` | Dark backgrounds |
+| `.bg-gray-dark` | Dark Gray | #374151 | `background-color: #374151;` | Dark sections |
+| `.bg-gray` | Gray | #6b7280 | `background-color: #6b7280;` | Muted backgrounds |
 | `.bg-gray-light` | Light Gray | #f3f4f6 | `background-color: #f3f4f6;` | Subtle backgrounds |
-| `.bg-blue`       | Blue       | #3b82f6 | `background-color: #3b82f6;` | Primary actions    |
-| `.bg-green`      | Green      | #10b981 | `background-color: #10b981;` | Success states     |
-| `.bg-red`        | Red        | #ef4444 | `background-color: #ef4444;` | Error states       |
-| `.bg-yellow`     | Yellow     | #f59e0b | `background-color: #f59e0b;` | Warning states     |
-
-</Card>
+| `.bg-blue` | Blue | #3b82f6 | `background-color: #3b82f6;` | Primary actions |
+| `.bg-green` | Green | #10b981 | `background-color: #10b981;` | Success states |
+| `.bg-red` | Red | #ef4444 | `background-color: #ef4444;` | Error states |
+| `.bg-yellow` | Yellow | #f59e0b | `background-color: #f59e0b;` | Warning states |
 
 ## Examples
 
@@ -60,7 +56,6 @@ Control background color with semantic utilities. Background colors help create 
 
 ### Status Backgrounds
 
-<Card title="Status Colors" icon="info-circle">
 ```html
 <!-- Status color combinations -->
 <div class="bg-green text-white p-4 rounded">Success: Operation completed</div>
@@ -68,47 +63,35 @@ Control background color with semantic utilities. Background colors help create 
 <div class="bg-yellow text-black p-4 rounded">Warning: Please check this</div>
 <div class="bg-blue text-white p-4 rounded">Info: Additional information</div>
 ```
-</Card>
 
 ### Card with Color Accent
 
-<Card title="Colored Card" icon="square">
-  ```html
-  <div class="bg-white border-l-4 border-blue p-6 rounded-lg">
-    <h3 class="text-xl font-semibold text-black mb-2">Card Title</h3>
-    <p class="text-gray">Card content with blue accent border</p>
-  </div>
-  ```
-</Card>
+```html
+<div class="bg-white border-l-4 border-blue p-6 rounded-lg">
+  <h3 class="text-xl font-semibold text-black mb-2">Card Title</h3>
+  <p class="text-gray">Card content with blue accent border</p>
+</div>
+```
 
 ### Navigation with Color
 
-<Card title="Colored Navigation" icon="bars">
-  ```html
-  <nav class="bg-blue text-white p-4">
-    <div class="flex items-center justify-between">
-      <h1 class="text-xl font-bold">Logo</h1>
-      <div class="flex gap-6">
-        <a href="#" class="text-white hover:text-gray-light">
-          Home
-        </a>
-        <a href="#" class="text-white hover:text-gray-light">
-          About
-        </a>
-        <a href="#" class="text-white hover:text-gray-light">
-          Contact
-        </a>
-      </div>
+```html
+<nav class="bg-blue text-white p-4">
+  <div class="flex items-center justify-between">
+    <h1 class="text-xl font-bold">Logo</h1>
+    <div class="flex gap-6">
+      <a href="#" class="text-white hover:text-gray-light">Home</a>
+      <a href="#" class="text-white hover:text-gray-light">About</a>
+      <a href="#" class="text-white hover:text-gray-light">Contact</a>
     </div>
-  </nav>
-  ```
-</Card>
+  </div>
+</nav>
+```
 
 ## Color Combinations
 
 ### High Contrast Combinations
 
-<Card title="High Contrast Backgrounds" icon="eye">
 ```html
 <!-- High contrast combinations -->
 <div class="bg-black text-white p-6">Black background, white text</div>
@@ -116,18 +99,15 @@ Control background color with semantic utilities. Background colors help create 
 <div class="bg-blue text-white p-6">Blue background, white text</div>
 <div class="bg-green text-white p-6">Green background, white text</div>
 ```
-</Card>
 
 ### Subtle Combinations
 
-<Card title="Subtle Backgrounds" icon="eye-slash">
 ```html
 <!-- Subtle combinations -->
 <div class="bg-white text-gray-dark p-6">White background, dark gray text</div>
 <div class="bg-gray-light text-gray p-6">Light gray background, gray text</div>
 <div class="bg-white text-gray-light p-6">White background, light gray text</div>
 ```
-</Card>
 
 ## Best Practices
 

@@ -27,7 +27,7 @@
             "group": "Getting Started",
             "pages": [
               "index",
-              "getting-started/quickstart",
+              "quickstart",
               "getting-started/installation"
             ]
           },
@@ -111,6 +111,7 @@
             "group": "Flexbox",
             "pages": [
               "flexbox/direction",
+              "flexbox/wrap",
               "flexbox/alignment",
               "flexbox/gap"
             ]

@@ -9,35 +9,27 @@ Use max-width utilities to limit how wide an element can become. These utilities
 
 ## Static Max Width Utilities
 
-<Card title="Max Width Properties" icon="expand">
-
-|              |          |                        |                      |
-| ------------ | -------- | ---------------------- | -------------------- |
-| `.max-w-sm`  | 400px    | `max-width: 400px;`    | Small max width      |
-| `.max-w-md`  | 600px    | `max-width: 600px;`    | Medium max width     |
-| `.max-w-lg`  | 800px    | `max-width: 800px;`    | Large max width      |
-| `.max-w-xl`  | 1000px   | `max-width: 1000px;`   | Extra large max width|
-| `.max-w-2xl` | 1200px   | `max-width: 1200px;`   | 2x large max width   |
-| `.max-w-full` | 100%     | `max-width: 100%;`     | Full max width       |
-
-</Card>
+| Class | Value | CSS | Usage |
+| ----- | ----- | --- | ----- |
+| `.max-w-sm` | 400px | `max-width: 400px;` | Small max width |
+| `.max-w-md` | 600px | `max-width: 600px;` | Medium max width |
+| `.max-w-lg` | 800px | `max-width: 800px;` | Large max width |
+| `.max-w-xl` | 1000px | `max-width: 1000px;` | Extra large max width |
+| `.max-w-2xl` | 1200px | `max-width: 1200px;` | 2x large max width |
+| `.max-w-full` | 100% | `max-width: 100%;` | Full max width |
 
 ## Fluid Max Width Utilities
 
 Fluid max-width utilities use `clamp()` to scale smoothly between mobile and desktop sizes, perfect for responsive content containers.
 
-<Card title="Fluid Max Width Properties" icon="waveform">
-
-|                    | Clamp Expression                                      | Mobile → Desktop |
-| ------------------ | ----------------------------------------------------- | --------------- |
-| `.max-w-fluid-sm`  | `clamp(20rem, calc(17rem + 7.4vw), 25rem)`            | 320px → 400px   |
-| `.max-w-fluid-md`  | `clamp(30rem, calc(25.5rem + 11.1vw), 37.5rem)`       | 480px → 600px   |
-| `.max-w-fluid-lg`  | `clamp(40rem, calc(34rem + 14.8vw), 50rem)`           | 640px → 800px   |
-| `.max-w-fluid-xl`  | `clamp(50rem, calc(42.5rem + 18.5vw), 62.5rem)`       | 800px → 1000px  |
-| `.max-w-fluid-2xl` | `clamp(60rem, calc(51rem + 22.2vw), 75rem)`           | 960px → 1200px  |
-| `.max-w-fluid-full` | 100%                                                  | Full max width  |
-
-</Card>
+| Class | Clamp Expression | Mobile → Desktop |
+| ----- | ---------------- | ---------------- |
+| `.max-w-fluid-sm` | `clamp(20rem, calc(17rem + 7.4vw), 25rem)` | 320px → 400px |
+| `.max-w-fluid-md` | `clamp(30rem, calc(25.5rem + 11.1vw), 37.5rem)` | 480px → 600px |
+| `.max-w-fluid-lg` | `clamp(40rem, calc(34rem + 14.8vw), 50rem)` | 640px → 800px |
+| `.max-w-fluid-xl` | `clamp(50rem, calc(42.5rem + 18.5vw), 62.5rem)` | 800px → 1000px |
+| `.max-w-fluid-2xl` | `clamp(60rem, calc(51rem + 22.2vw), 75rem)` | 960px → 1200px |
+| `.max-w-fluid-full` | 100% | Full max width |
 
 ## Static Max Width Examples
 

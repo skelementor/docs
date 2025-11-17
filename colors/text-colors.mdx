@@ -9,21 +9,17 @@ Control text color with semantic color utilities. All text color utilities are d
 
 ## Text Color Utilities
 
-<Card title="Text Colors" icon="text-size">
-
-|                    |            |         |                   |                           |
-| ------------------ | ---------- | ------- | ----------------- | ------------------------ |
-| `.text-white`      | White      | #ffffff | `color: #ffffff;` | Text on dark backgrounds |
-| `.text-black`      | Black      | #000000 | `color: #000000;` | Primary text             |
-| `.text-gray-dark`  | Dark Gray  | #374151 | `color: #374151;` | Primary text             |
-| `.text-gray`       | Gray       | #6b7280 | `color: #6b7280;` | Secondary text           |
-| `.text-gray-light` | Light Gray | #9ca3af | `color: #9ca3af;` | Muted text               |
-| `.text-blue`       | Blue       | #3b82f6 | `color: #3b82f6;` | Links, primary actions   |
-| `.text-green`      | Green      | #10b981 | `color: #10b981;` | Success messages         |
-| `.text-red`        | Red        | #ef4444 | `color: #ef4444;` | Error messages           |
-| `.text-yellow`     | Yellow     | #f59e0b | `color: #f59e0b;` | Warning messages         |
-
-</Card>
+| Class | Color | Hex | CSS | Usage |
+| ----- | ----- | --- | --- | ----- |
+| `.text-white` | White | #ffffff | `color: #ffffff;` | Text on dark backgrounds |
+| `.text-black` | Black | #000000 | `color: #000000;` | Primary text |
+| `.text-gray-dark` | Dark Gray | #374151 | `color: #374151;` | Primary text |
+| `.text-gray` | Gray | #6b7280 | `color: #6b7280;` | Secondary text |
+| `.text-gray-light` | Light Gray | #9ca3af | `color: #9ca3af;` | Muted text |
+| `.text-blue` | Blue | #3b82f6 | `color: #3b82f6;` | Links, primary actions |
+| `.text-green` | Green | #10b981 | `color: #10b981;` | Success messages |
+| `.text-red` | Red | #ef4444 | `color: #ef4444;` | Error messages |
+| `.text-yellow` | Yellow | #f59e0b | `color: #f59e0b;` | Warning messages |
 
 ## Examples
 
@@ -66,25 +62,21 @@ Control text color with semantic color utilities. All text color utilities are d
 
 ### High Contrast Text
 
-<Card title="High Contrast Combinations" icon="eye">
 ```html
 <!-- High contrast combinations -->
 <div class="bg-black text-white p-6">Black background, white text</div>
 <div class="bg-white text-black p-6 border border-black">White background, black text</div>
 <div class="bg-blue text-white p-6">Blue background, white text</div>
 ```
-</Card>
 
 ### Subtle Text Colors
 
-<Card title="Subtle Text Colors" icon="eye-slash">
 ```html
 <!-- Subtle combinations -->
 <div class="bg-white text-gray-dark p-6">White background, dark gray text</div>
 <div class="bg-gray-light text-gray p-6">Light gray background, gray text</div>
 <div class="bg-white text-gray-light p-6">White background, light gray text</div>
 ```
-</Card>
 
 ## Accessibility
 
@@ -92,11 +84,12 @@ Control text color with semantic color utilities. All text color utilities are d
   **Accessibility Note:** Ensure sufficient color contrast for readability. Text colors are designed to meet WCAG AA standards when used with appropriate backgrounds.
 </Warning>
 
-<Card title="Contrast Guidelines" icon="eye">
-  - **Normal text:** Minimum 4.5:1 contrast ratio - **Large text:** Minimum 3:1
-  contrast ratio - **UI components:** Minimum 3:1 contrast ratio - **Focus
-  indicators:** Minimum 3:1 contrast ratio
-</Card>
+### Contrast Guidelines
+
+- **Normal text:** Minimum 4.5:1 contrast ratio
+- **Large text:** Minimum 3:1 contrast ratio
+- **UI components:** Minimum 3:1 contrast ratio
+- **Focus indicators:** Minimum 3:1 contrast ratio
 
 ## Best Practices
 

@@ -9,17 +9,13 @@ Control border color with semantic utilities. Border colors work together with b
 
 ## Border Color Utilities
 
-<Card title="Border Colors" icon="square">
-
-|                      |            |         |                          |                  |
-| -------------------- | ---------- | ------- | ------------------------ | ---------------- |
-| `.border-white`      | White      | #ffffff | `border-color: #ffffff;` | White borders    |
-| `.border-black`      | Black      | #000000 | `border-color: #000000;` | Black borders    |
-| `.border-gray`       | Gray       | #6b7280 | `border-color: #6b7280;` | Standard borders |
-| `.border-gray-light` | Light Gray | #e5e7eb | `border-color: #e5e7eb;` | Subtle borders   |
-| `.border-blue`       | Blue       | #3b82f6 | `border-color: #3b82f6;` | Primary borders  |
-
-</Card>
+| Class | Color | Hex | CSS | Usage |
+| ----- | ----- | --- | --- | ----- |
+| `.border-white` | White | #ffffff | `border-color: #ffffff;` | White borders |
+| `.border-black` | Black | #000000 | `border-color: #000000;` | Black borders |
+| `.border-gray` | Gray | #6b7280 | `border-color: #6b7280;` | Standard borders |
+| `.border-gray-light` | Light Gray | #e5e7eb | `border-color: #e5e7eb;` | Subtle borders |
+| `.border-blue` | Blue | #3b82f6 | `border-color: #3b82f6;` | Primary borders |
 
 ## Examples
 
@@ -35,66 +31,54 @@ Control border color with semantic utilities. Border colors work together with b
 
 ### Form Field States
 
-<Card title="Form States" icon="list">
 ```html
 <!-- Normal state -->
 <input type="text" class="w-full p-3 border border-gray rounded" placeholder="Normal input">
 
 <!-- Error state -->
-
 <input type="text" class="w-full p-3 border border-red rounded" placeholder="Error input">
 
 <!-- Success state -->
-
 <input type="text" class="w-full p-3 border border-green rounded" placeholder="Success input">
 ```
-</Card>
 
 ### Accent Borders
 
-<Card title="Accent Border" icon="star">
-  ```html
-  <div class="border-l-4 border-blue bg-blue-light p-6 rounded">
-    <h3 class="text-lg font-600 mb-2">Accent Border</h3>
-    <p class="text-gray">Left accent border for emphasis</p>
-  </div>
-  ```
-</Card>
+```html
+<div class="border-l-4 border-blue bg-blue-light p-6 rounded">
+  <h3 class="text-lg font-600 mb-2">Accent Border</h3>
+  <p class="text-gray">Left accent border for emphasis</p>
+</div>
+```
 
 ### Button with Border
 
-<Card title="Bordered Button" icon="hand-pointer">
-  ```html
-  <button class="border-2 border-blue text-blue px-6 py-3 rounded hover:bg-blue hover:text-white">
-    Bordered Button
-  </button>
-  ```
-</Card>
+```html
+<button class="border-2 border-blue text-blue px-6 py-3 rounded hover:bg-blue hover:text-white">
+  Bordered Button
+</button>
+```
 
 ## Border Combinations
 
 ### Complete Border Styling
 
-<Card title="Complete Border Example" icon="square">
-  ```html
-  <div class="border-2 border-solid border-blue rounded-lg p-6 bg-white">
-    <h3 class="text-xl font-600 mb-4">Complete Border</h3>
-    <p class="text-gray">
-      This element has width, style, color, and radius all defined.
-    </p>
-  </div>
-  ```
-</Card>
+```html
+<div class="border-2 border-solid border-blue rounded-lg p-6 bg-white">
+  <h3 class="text-xl font-600 mb-4">Complete Border</h3>
+  <p class="text-gray">
+    This element has width, style, color, and radius all defined.
+  </p>
+</div>
+```
 
 ### Subtle Border
 
-<Card title="Subtle Border" icon="eye-slash">
-  ```html
-  <div class="border border-gray-light rounded p-4 bg-white">
-    <p class="text-gray">Subtle border for gentle separation</p>
-  </div>
-  ```
-</Card>
+```html
+<div class="border border-gray-light rounded p-4 bg-white">
+  <p class="text-gray">Subtle border for gentle separation</p>
+</div>
+```
 
 ## Best Practices
 

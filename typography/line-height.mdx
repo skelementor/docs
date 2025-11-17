@@ -7,16 +7,12 @@ description: "Fine-tune vertical rhythm with static `.leading-*` utilities or fl
 
 Static line-height utilities map to the typography scale so you can keep copy legible while preserving layout precision.
 
-<Card title="Static line-height utilities" icon="lines-leaning">
-
 | Class | CSS | Best for |
 | ----- | --- | -------- |
 | `.leading-tight` | `line-height: 16;` | Compact headings, badges (unitless, relative to font-size) |
 | `.leading-normal` | `line-height: 18;` | Standard body copy (unitless, relative to font-size) |
 | `.leading-relaxed` | `line-height: 24;` | Long-form paragraphs (unitless, relative to font-size) |
 | `.leading-loose` | `line-height: 32;` | Display headings, quotes (unitless, relative to font-size) |
-
-</Card>
 
 <Info>
 Line-height values are unitless, meaning they're calculated relative to the element's font-size. For example, with `font-size: 16px` and `line-height: 18`, the actual line-height will be `18px` (16px × 1.125).
@@ -37,16 +33,12 @@ Line-height values are unitless, meaning they're calculated relative to the elem
 
 Fluid line-height utilities mirror the font-size fluid scale. They maintain ideal spacing as text grows with the viewport.
 
-<Card title="Fluid line-height utilities" icon="waveform">
-
 | Class | Clamp expression | Ideal pairing |
 | ----- | ---------------- | ------------- |
 | `.leading-fluid-tight` | `line-height: clamp(1, calc(0.85 + 0.37vw), 1.25);` | `.text-fluid-4xl` hero headings |
 | `.leading-fluid-normal` | `line-height: clamp(1.125, calc(0.96rem + 0.42vw), 1.41rem);` | `.text-fluid-base` paragraphs |
 | `.leading-fluid-relaxed` | `line-height: clamp(1.5, calc(1.28rem + 0.56vw), 1.88rem);` | Feature sections and product descriptions |
 | `.leading-fluid-loose` | `line-height: clamp(2, calc(1.71rem + 0.74vw), 2.5rem);` | Oversized display copy |
-
-</Card>
 
 ```html
 <section class="py-fluid-6">

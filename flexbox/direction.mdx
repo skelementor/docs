@@ -9,14 +9,12 @@ Control the direction of flex items with direction utilities. Flex direction det
 
 ## Flex Direction Utilities
 
-<Card title="Flex Direction" icon="arrows-left-right">
-
-|             |        |                           |                   |
-| ----------- | ------ | ------------------------- | ----------------- |
-| `.flex-row` | Row    | `flex-direction: row;`    | Horizontal layout |
-| `.flex-col` | Column | `flex-direction: column;` | Vertical layout   |
-
-</Card>
+| Class | Direction | CSS | Usage |
+| ----- | --------- | --- | ----- |
+| `.flex-row` | Row | `flex-direction: row;` | Horizontal layout |
+| `.flex-col` | Column | `flex-direction: column;` | Vertical layout |
+| `.flex-row-reverse` | Row reverse | `flex-direction: row-reverse;` | Reverse horizontal layout |
+| `.flex-col-reverse` | Column reverse | `flex-direction: column-reverse;` | Reverse vertical layout |
 
 ## Examples
 
@@ -76,6 +74,24 @@ Control the direction of flex items with direction utilities. Flex direction det
 </div>
 ```
 
+### Reverse Layout
+
+```html
+<!-- Reverse row layout -->
+<div class="flex flex-row-reverse gap-4">
+  <div class="p-4 bg-blue text-white">Item 1 (appears last)</div>
+  <div class="p-4 bg-blue text-white">Item 2</div>
+  <div class="p-4 bg-blue text-white">Item 3 (appears first)</div>
+</div>
+
+<!-- Reverse column layout -->
+<div class="flex flex-col-reverse gap-4">
+  <div class="p-4 bg-green text-white">Item 1 (appears at bottom)</div>
+  <div class="p-4 bg-green text-white">Item 2</div>
+  <div class="p-4 bg-green text-white">Item 3 (appears at top)</div>
+</div>
+```
+
 ## Best Practices
 
 - **Default is row:** Flex containers default to row direction
@@ -86,6 +102,9 @@ Control the direction of flex items with direction utilities. Flex direction det
 ## Related Utilities
 
 <CardGroup cols={2}>
+  <Card title="Wrap" icon="arrows-left-right" href="/flexbox/wrap">
+    Control flex wrapping
+  </Card>
   <Card title="Alignment" icon="objects-align-left" href="/flexbox/alignment">
     Align items with justify-content and align-items
   </Card>

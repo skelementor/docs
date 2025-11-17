@@ -5,9 +5,7 @@ description: "Use static `.text-*` utilities for precise scales or fluid `.text-
 
 ## Static Size Scale
 
-Static classes map one-to-one with Elementor’s font size presets, so what you preview in the editor is exactly what users see.
-
-<Card title="Static font-size utilities" icon="text-size">
+Static classes map one-to-one with Elementor's font size presets, so what you preview in the editor is exactly what users see.
 
 | Class | Size | CSS | Typical usage |
 | ----- | ---- | --- | -------------- |
@@ -24,8 +22,6 @@ Static classes map one-to-one with Elementor’s font size presets, so what you 
 | `.text-7xl` | 72px | `font-size: 72px;` | Billboard headings |
 | `.text-8xl` | 96px | `font-size: 96px;` | Landing hero titles |
 | `.text-9xl` | 128px | `font-size: 128px;` | Oversized hero titles |
-
-</Card>
 
 ```html
 <div class="text-center space-y-4">
@@ -45,8 +41,6 @@ Need to match an existing Elementor Global Font? Assign the font family once, th
 
 Fluid utilities use `clamp()` to interpolate between a mobile-friendly minimum and a spacious desktop maximum. They shine for hero banners, marketing pages, and long-form editorial content.
 
-<Card title="Fluid font-size utilities" icon="waveform">
-
 | Class | Clamp expression | Mobile → Desktop range |
 | ----- | ---------------- | ---------------------- |
 | `.text-fluid-2xs` | `clamp(0.58rem, calc(0.49rem + 0.09vw), 0.64rem)` | 9.3px → 10.2px |
@@ -63,8 +57,6 @@ Fluid utilities use `clamp()` to interpolate between a mobile-friendly minimum a
 | `.text-fluid-7xl` | `clamp(4.31rem, calc(3.74rem + 4.58vw), 7.45rem)` | 69px → 119.2px |
 | `.text-fluid-8xl` | `clamp(5.17rem, calc(4.51rem + 6.05vw), 9.31rem)` | 82.7px → 149px |
 | `.text-fluid-9xl` | `clamp(6.2rem, calc(5.45rem + 7.98vw), 11.64rem)` | 99.2px → 186px |
-
-</Card>
 
 ```html
 <header class="py-fluid-6 text-center">

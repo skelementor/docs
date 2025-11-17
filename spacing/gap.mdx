@@ -15,44 +15,36 @@ Use `gap` instead of margin for spacing between flex items. It's more semantic a
 
 All gap utilities follow a consistent 4px scale for predictable layouts.
 
-<Card title="Spacing Scale" icon="ruler">
-
-|     |      |                     |
-| --- | ---- | ------------------- |
-| 1   | 4px  | Fine adjustments    |
-| 2   | 8px  | Small spacing       |
-| 3   | 12px | Medium spacing      |
-| 4   | 16px | Standard spacing    |
-| 6   | 24px | Large spacing       |
-| 8   | 32px | Extra large spacing |
-| 12  | 48px | Section spacing     |
-
-</Card>
+| Scale | Size | Usage |
+| ----- | ---- | ----- |
+| 1 | 4px | Fine adjustments |
+| 2 | 8px | Small spacing |
+| 3 | 12px | Medium spacing |
+| 4 | 16px | Standard spacing |
+| 6 | 24px | Large spacing |
+| 8 | 32px | Extra large spacing |
+| 12 | 48px | Section spacing |
 
 ## Static Gap Utilities
 
 Control spacing between flex items with static gap utilities.
 
-<Card title="Gap Properties" icon="arrows-up-down-left-right">
-
-|          |      |              |                 |
-| -------- | ---- | ------------ | --------------- |
-| `.gap-1` | 4px  | `gap: 4px;`  | Small gap       |
-| `.gap-2` | 8px  | `gap: 8px;`  | Small gap       |
-| `.gap-3` | 12px | `gap: 12px;` | Medium gap      |
-| `.gap-4` | 16px | `gap: 16px;` | Standard gap    |
-| `.gap-6` | 24px | `gap: 24px;` | Large gap       |
+| Class | Value | CSS | Usage |
+| ----- | ----- | --- | ----- |
+| `.gap-1` | 4px | `gap: 4px;` | Small gap |
+| `.gap-2` | 8px | `gap: 8px;` | Small gap |
+| `.gap-3` | 12px | `gap: 12px;` | Medium gap |
+| `.gap-4` | 16px | `gap: 16px;` | Standard gap |
+| `.gap-6` | 24px | `gap: 24px;` | Large gap |
 | `.gap-8` | 32px | `gap: 32px;` | Extra large gap |
 | `.gap-10` | 40px | `gap: 40px;` | Extra large gap |
-| `.gap-12` | 48px | `gap: 48px;` | Section gap     |
+| `.gap-12` | 48px | `gap: 48px;` | Section gap |
 | `.gap-14` | 56px | `gap: 56px;` | Large section gap |
 | `.gap-16` | 64px | `gap: 64px;` | Extra large section gap |
 | `.gap-18` | 72px | `gap: 72px;` | Very large gap |
 | `.gap-20` | 80px | `gap: 80px;` | Huge gap |
 | `.gap-22` | 88px | `gap: 88px;` | Extra huge gap |
 | `.gap-24` | 96px | `gap: 96px;` | Maximum gap |
-
-</Card>
 
 ### Examples
 
@@ -76,8 +68,6 @@ Control spacing between flex items with static gap utilities.
 
 Fluid gap utilities use `clamp()` to scale smoothly between mobile and desktop sizes, perfect for responsive layouts.
 
-<Card title="Fluid Gap Properties" icon="waveform">
-
 | Class | Clamp Expression | Mobile → Desktop |
 | ----- | ---------------- | ---------------- |
 | `.gap-fluid-1` | `clamp(0.25rem, calc(0.21rem + 0.09vw), 0.31rem)` | 4px → 5px |
@@ -94,8 +84,6 @@ Fluid gap utilities use `clamp()` to scale smoothly between mobile and desktop s
 | `.gap-fluid-20` | `clamp(5rem, calc(4.27rem + 1.85vw), 6.25rem)` | 80px → 100px |
 | `.gap-fluid-22` | `clamp(5.5rem, calc(4.7rem + 2.04vw), 6.88rem)` | 88px → 110px |
 | `.gap-fluid-24` | `clamp(6rem, calc(5.13rem + 2.22vw), 7.5rem)` | 96px → 120px |
-
-</Card>
 
 ### Fluid Gap Examples
 
