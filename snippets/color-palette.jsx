@@ -168,60 +168,128 @@ export const ColorPalette = () => {
   const shadeLabels = ['l-5', 'l-4', 'l-3', 'l-2', 'l-1', 'base', 'd-1', 'd-2', 'd-3', 'd-4', 'd-5'];
 
   return (
-    <div className="not-prose">
-      {/* Header row with shade numbers */}
-      <div className="flex items-center mb-4">
-        <div className="w-24 flex-shrink-0"></div>
-        <div className="flex flex-1 gap-3">
-          {shadeLabels.map((label) => (
-            <div 
-              key={label} 
-              className={`text-xs font-medium w-10 text-center ${
-                label === 'base' 
-                  ? 'text-zinc-950 dark:text-white' 
-                  : 'text-zinc-950/70 dark:text-white/70'
-              }`}
-            >
-              {label}
+    <div className="not-prose" style={{ maxWidth: '100%', margin: '0 auto' }}>
+      {/* Mobile: Scrollable container */}
+      <div className="md:hidden">
+        <div className="overflow-x-auto">
+          <div style={{ minWidth: '640px' }}>
+            {/* Header row */}
+            <div className="flex items-center mb-3">
+              <div className="w-16 flex-shrink-0"></div>
+              <div className="flex flex-1 gap-1.5">
+                {shadeLabels.map((label) => (
+                  <div 
+                    key={label} 
+                    className={`text-xs font-medium w-7 text-center ${
+                      label === 'base' 
+                        ? 'text-zinc-950 dark:text-white' 
+                        : 'text-zinc-950/70 dark:text-white/70'
+                    }`}
+                  >
+                    {label}
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Color rows */}
-      <div className="space-y-4">
-        {colorPalette.map((colorFamily) => (
-          <div key={colorFamily.name} className="flex items-center">
-            <div className="w-24 flex-shrink-0 text-sm text-zinc-950/80 dark:text-white/80 font-medium">
-              {colorFamily.name}
-            </div>
-            <div className="flex flex-1 gap-3">
-              {colorFamily.shades.map((shade, index) => (
-                <div
-                  key={index}
-                  className="aspect-square w-10 rounded-lg cursor-pointer transition-transform hover:scale-110 relative group border border-zinc-950/10 dark:border-white/10"
-                  style={{ backgroundColor: shade }}
-                  onClick={(e) => copyToClipboard(shade, e.shiftKey)}
-                  onMouseEnter={() => setHoveredColor(shade)}
-                  onMouseLeave={() => setHoveredColor(null)}
-                >
-                  {/* Custom tooltip */}
-                  {copiedColor === shade ? (
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-white/90 dark:bg-zinc-950/90 text-zinc-950 dark:text-white text-xs rounded-lg border border-zinc-950/20 dark:border-white/20 whitespace-nowrap opacity-100 pointer-events-none transition-opacity z-10 shadow-sm">
-                      Copied!
-                    </div>
-                  ) : (
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-white/90 dark:bg-zinc-950/90 text-zinc-950 dark:text-white text-xs rounded-lg border border-zinc-950/20 dark:border-white/20 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10 shadow-sm">
-                      {isShiftPressed ? shade : hexToOklch(shade)}
-                    </div>
-                  )}
+            {/* Color rows */}
+            <div className="space-y-2">
+              {colorPalette.map((colorFamily) => (
+                <div key={colorFamily.name} className="flex items-center">
+                  <div className="w-16 flex-shrink-0 text-xs text-zinc-950/80 dark:text-white/80 font-medium pr-2">
+                    {colorFamily.name}
+                  </div>
+                  <div className="flex flex-1 gap-1.5">
+                    {colorFamily.shades.map((shade, index) => (
+                      <div
+                        key={index}
+                        className="aspect-square w-7 rounded cursor-pointer transition-transform hover:scale-110 active:scale-95 relative group border border-zinc-950/10 dark:border-white/10"
+                        style={{ backgroundColor: shade }}
+                        onClick={(e) => copyToClipboard(shade, e.shiftKey)}
+                        onMouseEnter={() => setHoveredColor(shade)}
+                        onMouseLeave={() => setHoveredColor(null)}
+                      />
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Mobile instruction text */}
+        <div className="mt-4 text-xs text-center text-zinc-500 dark:text-zinc-400">
+          Tap any color to copy • Scroll horizontally to see all shades
+        </div>
       </div>
+
+      {/* Desktop: Centered, non-scrollable */}
+      <div className="hidden md:block">
+        {/* Header row */}
+        <div className="flex items-center mb-4">
+          <div className="w-24 flex-shrink-0"></div>
+          <div className="flex flex-1 gap-3">
+            {shadeLabels.map((label) => (
+              <div 
+                key={label} 
+                className={`text-xs font-medium w-10 text-center ${
+                  label === 'base' 
+                    ? 'text-zinc-950 dark:text-white' 
+                    : 'text-zinc-950/70 dark:text-white/70'
+                }`}
+              >
+                {label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Color rows */}
+        <div className="space-y-4">
+          {colorPalette.map((colorFamily) => (
+            <div key={colorFamily.name} className="flex items-center">
+              <div className="w-24 flex-shrink-0 text-sm text-zinc-950/80 dark:text-white/80 font-medium">
+                {colorFamily.name}
+              </div>
+              <div className="flex flex-1 gap-3">
+                {colorFamily.shades.map((shade, index) => (
+                  <div
+                    key={index}
+                    className="aspect-square w-10 rounded-lg cursor-pointer transition-transform hover:scale-110 relative group border border-zinc-950/10 dark:border-white/10"
+                    style={{ backgroundColor: shade }}
+                    onClick={(e) => copyToClipboard(shade, e.shiftKey)}
+                    onMouseEnter={() => setHoveredColor(shade)}
+                    onMouseLeave={() => setHoveredColor(null)}
+                  >
+                    {/* Tooltips */}
+                    {copiedColor === shade ? (
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-white/90 dark:bg-zinc-950/90 text-zinc-950 dark:text-white text-xs rounded-lg border border-zinc-950/20 dark:border-white/20 whitespace-nowrap opacity-100 pointer-events-none transition-opacity z-10 shadow-sm">
+                        Copied!
+                      </div>
+                    ) : (
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-white/90 dark:bg-zinc-950/90 text-zinc-950 dark:text-white text-xs rounded-lg border border-zinc-950/20 dark:border-white/20 whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10 shadow-sm">
+                        {isShiftPressed ? shade : hexToOklch(shade)}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop instruction text */}
+        <div className="mt-4 text-xs text-center text-zinc-500 dark:text-zinc-400">
+          Click to copy • Hold Shift to copy HEX instead of OKLCH
+        </div>
+      </div>
+
+      {/* Mobile toast notification */}
+      {copiedColor && (
+        <div className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 px-3 py-2 bg-white/90 dark:bg-zinc-950/90 text-zinc-950 dark:text-white text-sm rounded-lg border border-zinc-950/20 dark:border-white/20 shadow-lg z-50 backdrop-blur-sm">
+          Copied!
+        </div>
+      )}
     </div>
   );
 };
-
